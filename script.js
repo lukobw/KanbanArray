@@ -38,6 +38,7 @@ $(function () {
             return $column;
         }
     }
+
     Column.prototype = {
         addCard: function (card) {
             this.$element.children('ul').append(card.$element);
@@ -67,13 +68,13 @@ $(function () {
                 .append($cardDescription);
             return $card;
         }
-
-        Card.prototype = {
-            removeCard: function () {
-                this.$element.remove();
-            }
-        };
     }
+
+    Card.prototype = {
+        removeCard: function () {
+                this.$element.remove();
+        }
+    };
 
     var board = {
         name: 'Kanban Board',
