@@ -11,7 +11,7 @@ function Column (id, name) {
     var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
     var columnCardList = $('<ul class="card-list"></ul>');
     var columnDelete = $('<button class="btn-delete">x</button>');
-    var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
+    var columnAddCard = $('<button class="column-add-card">Add card</button>');
 
     columnDelete.click(function () {
       self.deleteColumn();
